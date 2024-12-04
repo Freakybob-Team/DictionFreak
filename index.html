@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DictionFreak</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Parkinsans", sans-serif;
+        }
+        body {
+            background-color: black;
+        }
+        form, h1, h2 {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>DictionFreak</h1>
+    <h2>Powered by freaky words and GitHub</h2>
+    <form onsubmit="sendWord(); return false;">
+        <input type="text" id="username" name="username">
+        <button type="submit" id="dabutton">Look Up</button>
+    </form>
+</body>
+</html>
