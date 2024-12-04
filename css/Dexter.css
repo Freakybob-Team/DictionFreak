@@ -1,0 +1,13 @@
+/* InDex(ter) CSS
+By the Freakybob Team.
+- freakybobsite@proton.me or @freakybob.site on bluesky
+*/
+* {
+    font-family: "Parkinsans", sans-serif;
+}
+body {
+    background-color: black;
+}
+form, h1, h2, div {
+    color: white;
+}
