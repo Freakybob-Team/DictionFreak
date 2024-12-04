@@ -6,12 +6,12 @@ Please give credit! <3
 * {
     font-family: "Parkinsans", sans-serif;
 }
-small, h1 {
+.word_listed, .sound {
     display: inline;
 }
 body {
     background-color: black;
 }
-h1, h2, small, h3 {
+h1, h2, small, h3, footer, header {
     color: white;
 }
