@@ -2,4 +2,16 @@
 A CSS file for words.
 Made by the Freakybob Team.
 Please give credit! <3
-- freakybobsite@proton.me or @freakybob.site on bluesky
+- freakybobsite@proton.me or @freakybob.site on bluesky */
+* {
+    font-family: "Parkinsans", sans-serif;
+}
+small, h1 {
+    display: inline;
+}
+body {
+    background-color: black;
+}
+h1, h2, small, h3 {
+    color: white;
+}
