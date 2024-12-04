@@ -7,11 +7,6 @@ function sendWord() {
     wvalue = word.value
     console.log("value: " + wvalue)
     console.log("Function called. Name: sendWord()")
-    if (wvalue === "Freaky" || wvalue === "freaky") {
-        window.location.replace("words/freaky.html");
-        console.log("Redirected!")
-    } else {
-        nf.innerText = "Oops! Word not found. (404)"
-        console.log("404 Word Not Found")
-    }
+    window.location.replace("words/" + wvalue + ".html");
+    console.log("Redirected!")
 }
