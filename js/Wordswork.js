@@ -7,6 +7,6 @@ function sendWord() {
     wvalue = word.value
     console.log("value: " + wvalue)
     console.log("Function called. Name: sendWord()")
-    window.location.replace("words/" + wvalue + ".html");
+    window.location.replace("words/" + wvalue.toLowerCase() + ".html");
     console.log("Redirected!")
 }
