@@ -14,17 +14,19 @@
         body {
             background-color: black;
         }
-        form, h1, h2 {
+        form, h1, h2, div {
             color: white;
         }
     </style>
 </head>
 <body>
     <h1>DictionFreak</h1>
-    <h2>Powered by freaky words and GitHub</h2>
+    <h2>The 'brainrot' dictionary.</h2>
     <form onsubmit="sendWord(); return false;">
-        <input type="text" id="username" name="username">
+        <input type="text" id="word" name="word">
         <button type="submit" id="dabutton">Look Up</button>
     </form>
+    <div id="nf"></div>
+    <script src="js/Wordswork.js"></script>
 </body>
 </html>
