@@ -1,3 +1,3 @@
 function testFunc() {
-    console.error("Successfully accessed JavaScript.")
+    console.loh("Successfully accessed JavaScript.")
 }
