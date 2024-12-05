@@ -3,20 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DictionFreak</title>
+    <title>DictionFreak | The 'Brainrot' Dictionary</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/Dexter.css">
 </head>
 <body>
-    <h1>DictionFreak</h1>
-    <h2>The 'brainrot' dictionary.</h2>
-    <form onsubmit="sendWord(); return false;">
-        <input type="text" id="word" name="word">
-        <button type="submit" id="dabutton">Look Up</button>
-    </form>
-    <div id="nf"></div>
+    <header>
+        <h1>DictionFreak</h1>
+        <h2>The 'brainrot' dictionary.</h2>
+    </header>
+    <main>
+        <section class="search-bar">
+            <form onsubmit="sendWord(); return false;">
+                <input type="text" id="word" name="word" placeholder="Search for a word..." autocomplete="off">
+                <button type="submit" id="dabutton">Look Up</button>
+            </form>
+        </section>
+        <section class="random-word">
+            <button onclick="showRandomWord()">Surprise Me!</button>
+        </section>
+        <section class="results">
+            <div id="nf">Enter a word above to see its definition!!!</div>
+        </section>
+        <section class="about">
+            <h3>About DictionFreak</h3>
+            <p>DictionFreak is a dictionary for brainrot words lmao</p>
+        </section>
+    </main>
+    <footer>
+        <p>2024 FreakyBob Team. All rights reserved.</p>
+        <p>Contact us at <a href="mailto:freakybobsite@proton.me">freakybobsite@proton.me</a> or contact us on <a href="https://bsky.app/profile/freakybob.site">Bluesky</a>.</p>
+    </footer>
     <script src="js/Wordswork.js"></script>
+    <script src="js/random.js"></script>
 </body>
 </html>
