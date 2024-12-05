@@ -6,7 +6,10 @@ By the Freakybob Team.
     font-family: "Parkinsans", sans-serif;
 }
 body {
-    background-color: black;
+    background-image: linear-gradient(to bottom, rgb(94, 207, 173) 0%, rgb(57, 72, 148) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 form, h1, h2, div {
     color: white;
