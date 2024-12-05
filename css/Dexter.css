@@ -4,13 +4,275 @@ By the Freakybob Team.
 */
 * {
     font-family: "Parkinsans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-    background-image: linear-gradient(to bottom, rgb(94, 207, 173) 0%, rgb(57, 72, 148) 100%);
-    background-repeat: no-repeat;
+    background: linear-gradient(to bottom, #0a4d59 0%, #599fae 100%);
     background-attachment: fixed;
-    background-size: 100% 100%;
+    background-size: cover;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
 }
-form, h1, h2, div {
-    color: white;
+
+header {
+    background-color: #4b6584;
+    color: #fff;
+    text-align: center;
+    padding: 30px 15px;
+    border-bottom: 5px solid #3c5068;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.search-bar {
+    
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.search-bar input[type="text"] {
+    background: #b7b5b5;
+    width: 70%;
+    max-width: 600px;
+    padding: 12px;
+    font-size: 1.1rem;
+    border: 1px solid #bbb;
+    border-radius: 25px;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.search-bar input[type="text"]:focus {
+    box-shadow: 0 0 10px #4b6584;
+    border-color: #4b6584;
+}
+
+.search-bar button {
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    background-color: #4b6584;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-bar button:hover {
+    background-color: #3c5068;
+    transform: scale(1.05);
+}
+
+.results {
+    padding: 25px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #979090;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #4b6584;
+}
+
+#nf {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.random-word {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.random-word button {
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    background-color: #3c5068;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.random-word button:hover {
+    background-color: #4b6584;
+    transform: scale(1.05);
+}
+
+.popular-words {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #4b6584;
+}
+
+.popular-words h3 {
+    font-size: 1.6rem;
+    color: #4b6584;
+    margin-bottom: 15px;
+}
+
+.popular-words ul {
+    list-style: none;
+    padding: 0;
+}
+
+.popular-words li {
+    margin: 10px 0;
+}
+
+.popular-words a {
+    text-decoration: none;
+    color: #4b6584;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.popular-words a:hover {
+    color: #3c5068;
+}
+
+.about {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background: #979090;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #4b6584;
+}
+
+.about h3 {
+    font-size: 1.6rem;
+    color: #4b6584;
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #4b6584;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ffdd59;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #fff;
+}
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header h2 {
+        font-size: 1.3rem;
+    }
+
+    .search-bar input[type="text"] {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .search-bar button {
+        font-size: 1rem;
+    }
+
+    .results, .popular-words, .about {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+    .random-word button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .popular-words h3, .about h3 {
+        font-size: 1.3rem;
+    }
+
+    .popular-words a {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    .search-bar input[type="text"] {
+        width: 90%;
+    }
+
+    .search-bar button {
+        margin-top: 20px;
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .results, .popular-words, .about {
+        padding: 10px;
+    }
+
+    .random-word button {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .popular-words h3, .about h3 {
+        font-size: 1.2rem;
+    }
+
+    .popular-words a {
+        font-size: 1rem;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
 }
