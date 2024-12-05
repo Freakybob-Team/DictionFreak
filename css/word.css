@@ -93,3 +93,6 @@ footer {
     font-size: 0.9rem;
     color: #d1d1d1;
 }
+.day_ent, .creds {
+    display: inline;
+}
